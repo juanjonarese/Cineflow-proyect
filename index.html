@@ -24,7 +24,121 @@
     />
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="logo col-6 bg-warning">
+            <!-- logo -->
+            <img src="/assets/free-logotipo-3446031-2882300.webp" alt="logo" />
+          </div>
+          <!-- iconos -->
+          <div class="iconos col-6 bg-primary">
+            <div class="iconos">
+              <i class="bi bi-search fs-3"> </i>
+              <i class="bi bi-bookmark fs-3"></i>
+              <i
+                class="bi bi-person-circle fs-3"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                          Suscríbete
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- aca va el formulario para usuario y contraseña -->
+                        <form>
+                          <div class="mb-3">
+                            <label
+                              for="exampleInputEmail1"
+                              class="form-label fs-5"
+                              >Email</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label
+                              for="exampleInputPassword1"
+                              class="form-label fs-5"
+                              >Contraseña</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="exampleInputPassword1"
+                            />
+                            <div id="emailHelp" class="form-text fs-6">
+                              Nunca compartas tu contraseña con nadie.
+                            </div>
+                          </div>
+                          <div class="mb-3 form-check">
+                            <input
+                              type="checkbox"
+                              class="form-check-input"
+                              id="exampleCheck1"
+                            />
+                            <label
+                              class="form-check-label fs-6"
+                              for="exampleCheck1"
+                              >olvide mi contraseña</label
+                            >
+                          </div>
+                          <button type="submit" class="btn btn-primary">
+                            Submit
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </i>
+            </div>
+          </div>
+        </div>
+        <!-- lista de menu -->
+        <div class="row">
+          <div class="menu col-12 bg-danger">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Active</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
     <script
