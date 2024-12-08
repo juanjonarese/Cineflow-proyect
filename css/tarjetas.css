@@ -1,0 +1,26 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(https://th.bing.com/th/id/OIP.bKz--9soIO7CqD4HVOOF9AHaLH?rs=1&pid=ImgDetMain);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+
+.card{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(246, 246, 246, 0);
+}
+.card-body{
+    color: white;
+    font-family: sans-serif;
+    & h5{
+        font-size: 20px;
+    }
+    & p{
+        font-size: 13px;
+    }
+}
+

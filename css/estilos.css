@@ -37,13 +37,15 @@ header {
         
     }
 }
-.card{
+.boton{
     position: absolute;
-    left: 20px;
     bottom: 9px;
     & a{
         font-size: 18px;
     }
 }
+
+
+
  
   
