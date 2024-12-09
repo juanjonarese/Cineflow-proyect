@@ -1,12 +1,39 @@
-body{
+.img-1{
     background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(https://th.bing.com/th/id/OIP.bKz--9soIO7CqD4HVOOF9AHaLH?rs=1&pid=ImgDetMain);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 100vh;
 }
+.img-2{
+    background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(https://th.bing.com/th/id/OIP.qdd_Dt6aMY6Xk64uz5YsCwHaKj?rs=1&pid=ImgDetMain);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.img-3{
+    background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.587)), url(https://img.rgstatic.com/content/show/ad6432d8-7815-473d-bef4-b6c7a6374d1f/poster-342.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.img-4{
+    background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.587)), url(https://3.bp.blogspot.com/-S44Nafat_Cg/VOvGLDghmfI/AAAAAAAAAQQ/H16PpcDwMNg/s1600/Ouija-Poster-Final.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.img-5{
+    background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.587)), url(https://images.justwatch.com/poster/304426769/s718/season-6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
 
-
+}
 
 .card{
     position: absolute;
