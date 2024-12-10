@@ -5,30 +5,32 @@
 }
 
 
-
 .logo{
     height: 50px;
     object-fit: cover;
+    margin: 10px;
 }
 
 .container-fluid{
-    background-color: #15344850;
+    background-color: #15344800;
     align-items: center;
+    
 }
 
 .menu {
-   
-    overflow: auto;
     white-space: nowrap;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+
     
 }
+
 
 
 li{
     display: inline-block;
     margin: 5px;
-    padding: 15px;
+    padding: 18px;
     
 }
 
