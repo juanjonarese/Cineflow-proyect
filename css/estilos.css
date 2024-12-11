@@ -13,11 +13,11 @@
     
 }
 
-.nav {flex-wrap: nowrap; height: 50px; overflow-x: scroll;
+.nav {flex-wrap: nowrap; height: 50px; overflow-x: auto;
     overflow-y: hidden;}
 
 .nav-item{
-    
+    padding: 5px;
     display: inline-block;
    
 }

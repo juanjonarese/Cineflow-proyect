@@ -25,88 +25,117 @@
   </head>
   <body>
     <header>
-      <div class="container-fluid text-center position-fixed text-light">
-        <div class="row">
-          <!-- logo -->
-          <div class="col-6 col-md-4">
-            <img class="logo" src="/assets/cineflow.svg" alt="" />
-          </div>
-          <!-- iconos -->
-          <div
-            class="iconos col-6 col-md-4 d-flex align-items-center justify-content-center"
-          >
-            <a href="https://www.google.com"
-              ><i class="bi bi-person-circle text-white m-2"> </i
-            ></a>
-            <a href="#"><i class="bi bi-bookmark text-white m-2"></i></a>
-            <a href="h"><i class="bi bi-search m-2"></i></a>
-          </div>
-
-          <!-- lista de menu -->
-
-          <div class="menu d-flex col-12 col-md-4">
-            <ul class="mt-2">
-              <li>
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Inicio</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="#">Series</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#">Peliculas</a>
-              </li>
-              <li>
-                <a class="nav-link disabled" aria-disabled="true">Categorias</a>
-              </li>
-              <li>
-                <a class="nav-link disabled" aria-disabled="true"
-                  >Sobre nostros</a
-                >
-              </li>
-            </ul>
-          </div>
+      <div class="navbar row d-flex">
+        <div class="logo col-6 col-md-4">
+          <img src="/assets/cineflow.svg" alt="" />
+        </div>
+        <!-- iconos -->
+        <div
+          class="iconos col-6 col-md-6 d-flex align-items-center justify-content-center"
+        >
+          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+            ><i class="bi bi-person-circle text-white m-2"> </i
+          ></a>
+          <a href="/Pages/planes.html"
+            ><i class="bi bi-bookmark text-white m-2"></i
+          ></a>
+          <a href="#"><i class="bi bi-search text-white m-2"></i></a>
+        </div>
+        <!-- menu -->
+        <div class="menu col-12 col-md-12">
+          <ul class="nav text-white">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Peliculas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contactános</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
     <main>
+      <!-- planes -->
       <div class="row">
-        <div class="planes">
-          <div class="col-sm-4 mb-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
-          <div class="col-sm-4 mb-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
-          <div class="col-sm-4 mb-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Iniciar sesión
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Correo electrónico:</label
+                  >
+                  <input type="text" class="form-control" id="recipient-name" />
+                </div>
+
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Contraseña:</label
+                  >
+                  <input type="password" class="form-control" id="pass" />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Ingresar</button>
             </div>
           </div>
         </div>
