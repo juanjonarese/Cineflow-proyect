@@ -13,21 +13,13 @@
     
 }
 
-.menu {
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
+.nav {flex-wrap: nowrap; height: 50px; overflow-x: scroll;
+    overflow-y: hidden;}
 
+.nav-item{
     
-}
-
-
-
-li{
     display: inline-block;
-
-    margin: 5px;
-    
+   
 }
 
 .planes{
