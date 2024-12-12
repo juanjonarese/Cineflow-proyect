@@ -4,20 +4,25 @@
     box-sizing: border-box;
 }
 
+.container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 .logo{
     max-width: 250px;
 }
+
+
 
 .navbar{
     background-color: #1a1a1d;
     align-items: center;
     margin: 0;
     padding: 0;
-    
 }
 
-.nav {flex-wrap: nowrap; height: 50px; overflow-x: auto;
+.nav {flex-wrap: nowrap; height: 50px; overflow-x: scroll;
     overflow-y: hidden;}
 
 .nav-item{
@@ -26,11 +31,14 @@
    
 }
 
-.buscador-x{
-    
-    font-size: 12px;
-    padding: 5px;
-}
+.scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; }
+
+    .scroll::-webkit-scrollbar {
+        display: none; }
 
 .planes{
     margin-top: 120px;

@@ -17,7 +17,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/css/estilos.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -25,25 +25,37 @@
   </head>
   <body>
     <header>
-      <div class="navbar row d-flex ixed-top">
-        <div class="logo col-6 col-md-4">
-          <img src="/assets/cineflow.svg" alt="" />
+      <div class="navbar row d-flex">
+        <div class="logo col-6 col-lg-4 col-md-4">
+          <img src="../assets/cineflow.svg" alt="" />
         </div>
         <!-- iconos -->
         <div
-          class="iconos col-6 col-md-6 d-flex align-items-center justify-content-center"
+          class="iconos col-6 col-lg-4 d-flex align-items-end justify-content-end"
         >
           <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
             ><i class="bi bi-person-circle text-white m-2"> </i
           ></a>
-          <a href="/Pages/planes.html"
+          <a href="../Pages/planes.html"
             ><i class="bi bi-bookmark text-white m-2"></i
           ></a>
-          <a href="#"><i class="bi bi-search text-white m-2"></i></a>
         </div>
+
+        <form class="d-flex col-lg-4 my-2">
+          <input
+            class="form-control mr-sm-2 me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-primary my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+
         <!-- menu -->
         <div class="menu col-12 col-md-12">
-          <ul class="nav text-white">
+          <ul class="nav text-white scroll">
             <li class="nav-item">
               <a class="nav-link active" href="#">Inicio</a>
             </li>
@@ -66,9 +78,10 @@
         </div>
       </div>
     </header>
+
     <main>
-      <!-- planes -->
       <section class="container">
+        <!-- planes -->
         <div class="row">
           <div class="col-sm-6 mb-3 mb-sm-0">
             <div class="card">
@@ -94,8 +107,74 @@
               </div>
             </div>
           </div>
+
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
       <!-- Modal -->
       <div
         class="modal fade"
