@@ -38,16 +38,18 @@
     white-space: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar; }
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
 
     .scroll::-webkit-scrollbar {
-        display: none; }
+        display: none;
+     }
 
 
+ .bucador-nav{
+    height: 35px;
+ }
 
-/* .bucador-nav{
-    height: 50px;
-} */
 
 /* .planes{
     margin-top: 120px;
