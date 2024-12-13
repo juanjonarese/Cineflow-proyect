@@ -39,6 +39,10 @@
     position: absolute;
     inset: 0;
     background-color: rgba(246, 246, 246, 0);
+    margin-right: auto;
+    margin-left: auto;
+    width: 20rem; 
+    height: 32rem;
 }
 .card-body{
     color: white;
@@ -51,3 +55,38 @@
     }
 }
 
+.margen{
+    margin-top: 100px;
+  }
+
+ @media (min-width: 768px) {
+    .card{
+        width: 40rem;
+        /* height: 40rem; */
+    }
+    .margen{
+        margin-top: 200px;
+      }
+    .card-body{
+        h5{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}
+
+@media(min-width:1024px){
+    .img-1{
+        background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.587)), url(https://is5-ssl.mzstatic.com/image/thumb/Video123/v4/01/fb/62/01fb62d6-675a-39a8-3b04-803938715fbd/Notebook_H_DD_KA_TT_3840x2160_300dpi_MX.lsr/1200x630.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .card{
+       
+        
+    }
+}
+  
