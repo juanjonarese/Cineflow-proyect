@@ -1,63 +1,50 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.container{
+  }
+  
+  .container {
     padding-top: 50px;
     padding-bottom: 50px;
-}
-
-.logo{
+  }
+  
+  .logo {
     max-width: 250px;
-}
-
-
-
-.navbar{
+  }
+  .logo img {
+    width: 100%;
+  }
+  
+  .buscador {
+    height: 25px;
+  }
+  /* Cuando el dispositivo sea mas grande, darle mas altura al .buscador */
+  .navbar {
     background-color: #1a1a1d;
     align-items: center;
     margin: 0;
     padding: 0;
-}
-
-.nav {
+  }
+  
+  .nav {
     flex-wrap: nowrap;
-    height: 50px; overflow-x: scroll;
+    height: 50px;
+    overflow-x: scroll;
     overflow-y: hidden;
-}
-
-.nav-item{
+  }
+  
+  .nav-item {
     padding: 5px;
     display: inline-block;
-   
-}
-
-.scroll {
-    white-space: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-
-    .scroll::-webkit-scrollbar {
-        display: none;
-     }
-
-
- .bucador-nav{
-    height: 35px;
- }
-
-
-/* .planes{
-    margin-top: 120px;
-   
-}
-
-.fredy{
-    width: 300px;
-    height: 700px;
-    object-fit: cover;
-} */
+  }
+  
+  .scroll {
+    /* white-space: nowrap; */
+    /* overflow-x: auto; */
+    /* -ms-overflow-style: -ms-autohiding-scrollbar; */
+  }
+  
+  .scroll::-webkit-scrollbar {
+    display: none;
+  }
