@@ -16,10 +16,8 @@
     width: 100%;
   }
   
-  .buscador {
-    height: 25px;
-  }
-  /* Cuando el dispositivo sea mas grande, darle mas altura al .buscador */
+ 
+  
   .navbar {
     background-color: #1a1a1d;
     align-items: center;
@@ -40,9 +38,9 @@
   }
   
   .scroll {
-    /* white-space: nowrap; */
-    /* overflow-x: auto; */
-    /* -ms-overflow-style: -ms-autohiding-scrollbar; */
+    white-space: nowrap;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
   }
   
   .scroll::-webkit-scrollbar {

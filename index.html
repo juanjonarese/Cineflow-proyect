@@ -29,44 +29,28 @@
       <div class="navbar row d-flex align-items-center fixed-top">
         <!-- logo -->
         <div
-          class="logo col-6 col-md-4 order-md-1 d-flex justify-content-start"
+          class="logo col-6 col-lg-2 order-lg-1 d-flex justify-content-start"
         >
           <img src="/assets/cineflow.svg" />
         </div>
         <!-- iconos -->
         <div
-          class="iconos col-6 col-md-2 order-md-3 d-flex justify-content-end"
+          class="iconos col-6 col-lg-2 order-lg-3 d-flex justify-content-end"
         >
-          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-            ><i class="bi bi-person-circle text-primary m-2"> </i
+          <a href="#" data-bs-toggle="modal" data-bs-target="#buscador"
+            ><i class="bi bi-search pb-2 m-1"></i
           ></a>
-          <a href="/Pages/planes.html"
-            ><i class="bi bi-bookmark text-primary m-2"></i
+          <a href="#" data-bs-toggle="modal" data-bs-target="#login"
+            ><i class="bi bi-person-circle m-2"> </i
           ></a>
-        </div>
-        <!-- buscador -->
-        <div class="col-12 col-md-6 order-md-2 d-flex buscador">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Busca tu pelicula"
-            aria-label="Recipient's username"
-            aria-describedby="button-addon2"
-          />
-          <button
-            class="btn btn-outline-secondary p-0 px-2 p-md-2"
-            type="button"
-            id="button-addon2"
-          >
-            <i class="bi bi-person-circle text-primary m-2"> </i>
-          </button>
+          <a href="/Pages/planes.html"><i class="bi bi-bookmark m-2"></i></a>
         </div>
 
         <!-- menu -->
-        <div class="menu col-12 col-md-12 order-md-4">
-          <ul class="nav text-white scroll">
+        <div class="menu col-12 col-md-12 col-lg-8 order-lg-2">
+          <ul class="nav scroll lg-justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" href="/index.html">Inicio</a>
+              <a class="nav-link" href="/index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Peliculas</a>
@@ -80,20 +64,58 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contactános</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
           </ul>
         </div>
       </div>
     </header>
     <main>
-      <!-- <img src="/assets/bohemian-rhapsody-poster.webp" alt="" /> -->
-
-      <!-- Modal -->
+      <!-- Modal buscador -->
       <div
         class="modal fade"
-        id="staticBackdrop"
+        id="buscador"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Busca tu pelicula
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- buscador -->
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="button-addon2"
+                >
+                  Buscar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal login-->
+      <div
+        class="modal fade"
+        id="login"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
         tabindex="-1"
