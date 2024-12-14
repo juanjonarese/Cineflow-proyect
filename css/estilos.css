@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
   
   .container {
     padding-top: 50px;
@@ -19,7 +15,7 @@
  
   
   .navbar {
-    background-color: #1a1a1d;
+    background-color: #1a1a1d2d;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -46,3 +42,17 @@
   .scroll::-webkit-scrollbar {
     display: none;
   }
+
+  body{
+    
+    background: linear-gradient(#3B1C32,#97688a);
+
+  }
+
+ .precios{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+ }
