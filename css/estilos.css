@@ -1,0 +1,74 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/assets/Fondo\ de\ Pantalla\ Escritorio\ PC\ Abstracto\ Moderno\ Degradado\ Negro.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.form{
+
+background-color:rgba(175, 156, 194, 0.421);
+border-radius: 10px;
+margin: auto;
+margin-top: 10rem ;
+padding: 0.8rem;
+backdrop-filter: blur(20px);
+color: #ffff;
+
+}
+.titulo{
+   margin: 20px 0;
+}
+.titulo-label{
+   margin: 10px 0;
+}
+
+
+ .recordar{
+   text-align: center;
+   margin: 10px 0;
+   a{
+      color: #ffff;
+      text-decoration: none;
+   }
+ }
+ .recordar:hover{
+    text-decoration: underline;
+ }
+
+.button-group{
+   text-align: center;
+   margin: 10px 0;
+}
+button {
+    padding: 10px 20px;  
+    background-color: #2806be; 
+    color: rgb(255, 255, 250); 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+  
+
+  button:hover {
+    background-color: #2c29e0; 
+    transform: scale(1.01)
+  }
+  
+  
+  button:active{
+    background-color: #222fda;
+   }
+    
+    
+
