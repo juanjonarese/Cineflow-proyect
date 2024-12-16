@@ -55,12 +55,14 @@
               <a class="nav-link text-light" href="/index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Destacados</a>
+              <a class="nav-link text-light" href="#">Peliculas y series</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Team Flow</a>
+              <a class="nav-link text-light" href="#">Series</a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Sobre nosotros</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="#">Contactános</a>
             </li>
@@ -70,85 +72,93 @@
     </header>
 
     <main>
-      <!-- Planes -->
-
-      <div class="planes container">
-        <h2 class="mx-4 text-white-50">Elige tu plan</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-3 mt-2">
-          <div class="col">
-            <div class="card h-100">
-              <div class="precios card-body text-bg-light">
-                <h5 class="card-title">Básico con anuncios</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item text-bg-light">
-                    <i class="bi bi-check-lg fs-6">Dos dispositivos a la vez</i>
-                  </li>
-                  <li class="list-group-item text-bg-light">
-                    <i class="bi bi-tv mb-2"> Conexion remota</i>
-                  </li>
-                </ul>
-                <div class="precios d-flex">
-                  <span class="fw-bolder mb-2">$ 5190 p/mes</span>
-                  <a href="/Pages/suscripcion.html" class="btn btn-primary mx-3"
-                    >Suscríbete</a
-                  >
-                </div>
-              </div>
+      <!-- Fromulario de suscrpcion -->
+      <div
+        class="container-fluid vh-100 d-flex justify-content-center align-items-start mt-5"
+      >
+        <form
+          class="suscripcion row g-3 needs-validation justify-content-center mb-5"
+          novalidate
+        >
+          <div class="col-12 col-lg-6">
+            <label for="validationCustom01" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom01"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <label for="validationCustom02" class="form-label">Apellido</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <label for="validationCustomUsername" class="form-label"
+              >Nombre de usuario</label
+            >
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustomUsername"
+                aria-describedby="inputGroupPrepend"
+                required
+              />
+              <div class="invalid-feedback">Ingresa un nombre de usuario.</div>
             </div>
           </div>
-
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body text-bg-light precios">
-                <h5 class="card-title">Estándar</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item text-bg-light">
-                    <i class="bi bi-check-lg fs-6">Dos dispositivos a la vez</i>
-                  </li>
-                  <li class="list-group-item text-bg-light">
-                    <i class="bi bi-tv"> Conexion remota</i>
-                  </li>
-                  <li class="list-group-item text-bg-light">
-                    <i class="bi bi-headphones"> Audio Dolby Atmos</i>
-                  </li>
-                </ul>
-                <div class="precios d-flex">
-                  <span class="fw-bolder mb-2">$ 6190 p/mes</span>
-                  <a href="/Pages/suscripcion.html" class="btn btn-primary mx-3"
-                    >Suscríbete</a
-                  >
-                </div>
+          <div class="col-md-6 col-lg-6">
+            <label for="validationCustom03" class="form-label">Pais</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom03"
+              required
+            />
+            <div class="invalid-feedback">Ingresa tu pais.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom04" class="form-label">Plan</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Elegi tu plan</option>
+              <option>Basico</option>
+              <option>Estandar</option>
+              <option>Platino</option>
+            </select>
+            <div class="invalid-feedback">Ingresa tu pais..</div>
+          </div>
+          <div class="boton-suscripcion col-12 col-lg-6">
+            <button class="btn btn-primary align-items-center" type="submit">
+              Suscribirme
+            </button>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <div class="invalid-feedback">
+                You must agree before submitting.
               </div>
+              <label class="form-check-label" for="invalidCheck">
+                Acepto terminos y condiciones
+              </label>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body text-bg-light r">
-                <h5 class="card-title ms-5">Platino</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item text-bg-light">
-                    <i class="bi bi-check-lg fs-6">Dos dispositivos a la vez</i>
-                  </li>
-                  <li class="list-group-item text-bg-light">
-                    <i class="bi bi-tv"> Conexion remota</i>
-                  </li>
-                  <li class="list-group-item text-bg-light">
-                    <i class="bi bi-headphones"> Audio Dolby Atmos</i>
-                  </li>
-                  <li class="list-group-item text-bg-light">
-                    <i class="bi bi-badge-hd"> Full HD</i>
-                  </li>
-                </ul>
-                <div class="precios d-flex">
-                  <span class="fw-bolder mb-2">$ 7190 p/mes</span>
-                  <a href="/Pages/suscripcion.html" class="btn btn-primary mx-3"
-                    >Suscríbete</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
 
       <!-- Modal buscador -->

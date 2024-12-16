@@ -1,24 +1,25 @@
-
-  
-  .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  
+header {
+   & .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+}
   .logo {
-    max-width: 250px;
+    max-width: 300px;
+
+    & img {
+      width: 100%;
+    }
   }
-  .logo img {
-    width: 100%;
-  }
+ 
   
  
   
   .navbar {
-    background-color: #1a1a1d2d;
+    background-color: #1a1a1d48;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
   }
   
   .nav {
@@ -26,10 +27,11 @@
     height: 50px;
     overflow-x: scroll;
     overflow-y: hidden;
+    
   }
-  
+
   .nav-item {
-    padding: 5px;
+    padding: 10px;
     display: inline-block;
   }
   
@@ -43,9 +45,13 @@
     display: none;
   }
 
+  .modal-content{
+    background-color: #e4e4e4;
+  }
+
   body{
     
-    background: linear-gradient(#3B1C32,#97688a);
+    background: linear-gradient(#1A1A1D,#3B1C32);
 
   }
 
@@ -55,4 +61,26 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  
  }
+
+
+ .cuerpo {
+  width: 100vw;
+  height: 600px;
+ }
+
+.tarjeta-plan{
+  background-color: #3B1C32;
+}
+
+ .suscripcion{
+  background-color: rgba(175, 156, 194,0.421 );
+  backdrop-filter: blur(20px);
+  max-width: 400px;
+  border-radius: 8px;
+  
+ }
+.boton-suscripcion{
+  margin-top: 60px;
+}
