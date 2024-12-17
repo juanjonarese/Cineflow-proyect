@@ -25,54 +25,70 @@
     />
   </head>
   <body>
-    <header class="container-fluid">
-      <div class="navbar row d-flex align-items-center">
-        <!-- logo -->
-        <div
-          class="logo col-6 col-lg-2 order-lg-1 d-flex justify-content-start text-light"
-        >
-          <img src="/assets/cineflow.svg" />
-        </div>
-        <!-- iconos -->
-        <div
-          class="iconos col-6 col-lg-2 order-lg-3 d-flex justify-content-end"
-        >
-          <a href="#" data-bs-toggle="modal" data-bs-target="#buscador"
-            ><i class="bi bi-search pb-2 m-1 text-light"></i
-          ></a>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#login"
-            ><i class="bi bi-person-circle m-2 text-light"> </i
-          ></a>
-          <a href="/Pages/planes.html"
-            ><i class="bi bi-bookmark m-2 text-center text-light"></i
-          ></a>
-        </div>
+    <header>
+      <nav id="menu" class="navbar navbar-expand-lg fixed-md-top">
+        <div class="container-fluid">
+          <img class="logo" src="/assets/cineflow.svg" alt="logo" />
 
-        <!-- menu -->
-        <div class="menu col-12 col-md-12 col-lg-8 order-lg-2 text-light">
-          <ul class="nav scroll lg-justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link text-light" href="/index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Destacados</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Team Flow</a>
-            </li>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="navit-item"></li>
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Peliculas y series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Pages/planes.html">Planes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team Flow</a>
+              </li>
+            </ul>
 
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Contactános</a>
-            </li>
-          </ul>
+            <div class="row g-2 flex-lg-row-reverse">
+              <form class="d-flex col-md-6 col-lg-10 order-2" role="search">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Busca tu pelicula"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary ms-1" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+              <a
+                class="btn btn-primary col-12 col-md-6 col-lg-2"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#login"
+              >
+                <i class="bi bi-person-circle order-1"> </i
+                ><span class="d-lg-none"> Inicio de sesión</span>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <main>
       <!-- Planes -->
 
-      <div class="planes container">
+      <div class="planes container t-2">
         <h2 class="mx-4 text-white-50">Elige tu plan</h2>
         <div class="row row-cols-1 row-cols-md-3 g-3 mt-2">
           <div class="col">
@@ -151,49 +167,6 @@
         </div>
       </div>
 
-      <!-- Modal buscador -->
-      <div
-        class="modal fade"
-        id="buscador"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Busca tu pelicula
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <!-- buscador -->
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  aria-label="Recipient's username"
-                  aria-describedby="button-addon2"
-                />
-                <button
-                  class="btn btn-primary"
-                  type="button"
-                  id="button-addon2"
-                >
-                  Buscar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- Modal login-->
       <div
         class="modal fade"
@@ -215,36 +188,47 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
-              <form>
-                <div class="mb-3">
-                  <label for="recipient-name" class="col-form-label"
-                    >Correo electrónico:</label
+            <div class="modal-body d-flex">
+              <form class="form align-items-start">
+                <div class="titulo text-center">
+                  <h2>Iniciá sesión</h2>
+                </div>
+                <div class="contenedor-input">
+                  <label for="email" class="titulo-label"
+                    >Correo electrónico</label
                   >
                   <input
                     type="email"
                     class="form-control"
-                    id="recipient-name"
+                    id="correo"
                     placeholder="example@example.com"
-                    required
                   />
                 </div>
 
-                <div class="mb-3">
-                  <label for="recipient-name" class="col-form-label"
-                    >Contraseña:</label
-                  >
+                <div class="contenedor-input">
+                  <label for="password" class="titulo-label">Contraseña</label>
                   <input
                     type="password"
                     class="form-control"
-                    id="pass"
-                    placeholder="ingresa tu contraseña"
+                    id="password"
+                    placeholder="Ingresa tu contraseña"
                   />
                 </div>
+
+                <div class="recordar">
+                  <a href="">¿Olvidaste la contraseña?</a>
+                </div>
+                <div class="button-group">
+                  <button type="submit">Iniciar sesión</button>
+                </div>
+
+                <div class="member text-center">
+                  <p>
+                    ¿Todavia no sos miembro de Cineflow?
+                    <a href="#">Suscribirme</a>
+                  </p>
+                </div>
               </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Ingresar</button>
             </div>
           </div>
         </div>

@@ -1,86 +1,128 @@
-header {
-   & .container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+
+
+
+.logo {
+  max-width: 250px;
+
+  & img {
+    width: 100%;
+  }
 }
+
+
+body {
+  background-color: #1a1a1d00;
+  
 }
-  .logo {
-    max-width: 300px;
 
-    & img {
-      width: 100%;
-    }
-  }
- 
-  
- 
-  
-  .navbar {
-    background-color: #1a1a1d48;
-    align-items: center;
-    /* margin: 0;
-    padding: 0; */
-  }
-  
-  .nav {
-    flex-wrap: nowrap;
-    height: 50px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    
-  }
+.modal-content{
+  background-color: #494040;
+}
 
-  .nav-item {
-    padding: 10px;
-    display: inline-block;
-  }
-  
-  .scroll {
-    white-space: nowrap;
-    overflow-x: auto;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-  }
-  
-  .scroll::-webkit-scrollbar {
-    display: none;
-  }
+main {
 
-  .modal-content{
-    background-color: #e4e4e4;
-  }
+background: linear-gradient(#1A1A1D,#3B1C32,#6A1E55,#A64D79);
 
-  body{
-    
-    background: linear-gradient(#1A1A1D,#3B1C32);
+}
 
-  }
+.navbar{
+  background-color: #6a1e55d5;
+}
 
- .precios{
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  
- }
+/* Planes */
 
 
- .cuerpo {
-  width: 100vw;
-  height: 600px;
- }
+
+.precios{
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+
+}
 
 .tarjeta-plan{
-  background-color: #3B1C32;
+background-color: #3B1C32;
 }
 
- .suscripcion{
-  background-color: rgba(175, 156, 194,0.421 );
-  backdrop-filter: blur(20px);
-  max-width: 400px;
-  border-radius: 8px;
-  
- }
-.boton-suscripcion{
-  margin-top: 60px;
+.suscripcion{
+background-color: rgba(175, 156, 194,0.421 );
+backdrop-filter: blur(20px);
+max-width: 400px;
+border-radius: 8px;
+
 }
+
+
+.boton-suscripcion{
+margin-top: 60px;
+}
+
+
+
+body {
+min-height: 100vh;
+font-family: Arial, Helvetica, sans-serif;
+background-image: url(/assets/Fondo\ de\ Pantalla\ Escritorio\ PC\ Abstracto\ Moderno\ Degradado\ Negro.png);
+background-position: center;
+background-size: cover;
+}
+
+.form{
+
+background-color:rgba(175, 156, 194, 0.421);
+border-radius: 10px;
+margin: auto;
+margin-top: 10rem ;
+padding: 0.8rem;
+backdrop-filter: blur(20px);
+color: #ffff;
+
+}
+.titulo{
+margin: 20px 0;
+}
+.titulo-label{
+margin: 10px 0;
+}
+
+
+.recordar{
+text-align: center;
+margin: 10px 0;
+a{
+  color: #ffff;
+  text-decoration: none;
+}
+}
+.recordar:hover{
+text-decoration: underline;
+}
+
+.button-group{
+text-align: center;
+margin: 10px 0;
+}
+button {
+padding: 10px 20px;  
+background-color: #2806be; 
+color: rgb(255, 255, 250); 
+border: none; 
+border-radius: 5px; 
+font-size: 16px; 
+cursor: pointer; 
+transition: background-color 0.3s ease; 
+}
+
+
+button:hover {
+background-color: #2c29e0; 
+transform: scale(1.01)
+}
+
+
+button:active{
+background-color: #222fda;
+}
+
