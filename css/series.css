@@ -1,39 +1,72 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html{
-    font-size: 62.5%;
-  }
-  
-  body{
-    background: linear-gradient(#1A1A1D,#3B1C32);
-    min-height: 100vh;
-  }
-  .carousel-item{
-    .col-6{
-      position: relative;
-      overflow: hidden;
-      span{
-        position: absolute;
-        background-color: #ffff;
-        font-weight: bold;
-        padding: 0.3rem;
-        border-radius: 0 0 0.4rem 0;
-      }
-      img{
-        height: 25rem;
-        object-fit: cover;
-      }
-      .dropdown{
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  background: linear-gradient(#1A1A1D,#3B1C32);
+  min-height: 100vh;
+}
+.carousel-item{
+  .col-6{
+    position: relative;
+    overflow: hidden;
+    span{
+      position: absolute;
+      background-color: #ffff;
+      font-weight: bold;
+      padding: 0.3rem;
+      border-radius: 0 0 0.4rem 0;
     }
-  
+    img{
+      height: 25rem;
+      object-fit: cover;
+    }
+    .dropdown{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   }
+
+}
+/* termina seccion destacados */
+
+/* seccion top10 */
+#carouselExample2{
+  margin-bottom: 50px;
+}
+.card-movie-top10{
+  border: solid 2px transparent;
+  img{
+    border: solid 1.5px transparent;
+  }
+  
+}
+.card-movie-top10:hover{
+  border: solid 2px #ffff;
+
+}
+.Numero-top10{
+  position: absolute;
+  bottom: 0;
+  left: 0.7rem;
+  font-size: 10.5rem;
+  font-weight: bold;
+  color: #ddd7ff;
+  text-shadow: 0 0 5px rgba(107, 105, 105, 0.7);
+  transition: all 0.5s ease-in;
+}
+
+
+/* HOVER */
+.Numero-top10:hover{
+  color: #3B1C32;
+
+}
   .carousel-control-prev{
     width: 2%;
   }

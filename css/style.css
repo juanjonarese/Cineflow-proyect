@@ -97,8 +97,7 @@
   .card{
       width: 70rem;
       height: 20rem;
-      margin-right: auto;
-      margin-left: auto;
+      margin-top: 130px;
   }
   .ratio{
     width: 50%;

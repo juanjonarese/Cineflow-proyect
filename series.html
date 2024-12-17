@@ -6,155 +6,295 @@
     <title>Cineflow</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/series.css">
+    <link rel="icon" href="/assets/icono.jpg" />
   </head>
   <body>
     <header></header>
     <main>
-        <!-- seccion tarjetas destacados -->
+       <!-- seccion tarjetas destacados -->
     <section class="container">
-        <!-- titulo destacadps -->
-        <div class="row p-4">
-          <div class="col text-light">
-            <h3><i class="bi bi-stars"></i>Series</h3>
+      <!-- titulo destacadps -->
+      <div class="row p-4">
+        <div class="col text-light">
+          <h3><i class="bi bi-stars"></i>Series</h3>
+        </div>
+      </div>
+      <!-- seccion tarjetas -->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-6 col-md-3 col-lg-2">
+                <span>Nuevo</span>
+                <a href="/series/lacasadelpapel.html"><img src="/assets/la-casa-de-papel.jpg" class="d-block w-100" alt=""></a>
+                
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                 
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2">
+                <span>Nuevo </span>
+                <a href="/series/emilyinparis.html"><img src="/assets/emily-in-paris.jpg" class="d-block w-100" alt="..."></a><div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-md-block">
+                <span>Nuevo</span>
+                <a href=""><img src="/assets/anne.jpg" class="d-block w-100" alt="..."></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-md-block">
+                <a href=""><img src="/assets/breaking-bad.jpg" class="d-block w-100" alt="..."></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-lg-block">
+                <a href=""><img src="/assets/game-thrones.jpg" class="d-block w-100" alt="..."></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-lg-block">
+                <span></span>
+                <a href=""><img src="/assets/dark.jpg" class="d-block w-100" alt="..."></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-6 col-md-3 col-lg-2">
+                <a href=""><img src="/assets/las-chicas-del-claves.jpg" class="d-block w-100" alt=""></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2">
+                <a href=""><img src="/assets/el-niñero.jpg" class="d-block w-100" alt="..."></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-md-block">
+                <a href=""><img src="/assets/stranger.jpg" class="d-block w-100" alt="..."></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-md-block">
+                <a href=""><img src="/assets/the-crown.jpg" class="d-block w-100" alt="..."></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-lg-block">
+                <a href=""><img src="/assets/the-resident.jpg" class="d-block w-100" alt="..."></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-lg-block">
+                <a href=""><img src="/assets/outer-banks.jpg" class="d-block w-100" alt="..."></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-6 col-md-3 col-lg-2">
+                <a href=""><img src="/assets/ley-orden.jpg" class="d-block w-100" alt=""></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2">
+                <a href=""><img src="/assets/valle-salvaje.jpg" class="d-block w-100" alt="..."></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-md-block">
+                <a href=""><img src="/assets/vikingos.jpg" class="d-block w-100" alt=""></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-md-block">
+                <a href=""><img src="/assets/outlander.jpg" class="d-block w-100" alt=""></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-lg-block">
+                <a href=""><img src="/assets/la-reina-del-sur.jpg" class="d-block w-100" alt=""></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-lg-block">
+                <a href=""><img src="/assets/rosario-tijeras.jpg" class="d-block w-100" alt=""></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-6 col-md-3 col-lg-2">
+                <a href=""><img src="/assets/juego-del-calamar.jpg" class="d-block w-100" alt=""></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2">
+                <a href=""><img src="/assets/orange-black.jpg" class="d-block w-100" alt="..."></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-md-block">
+                <a href=""><img src="/assets/the-queens.jpg" class="d-block w-100" alt=""></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-md-block">
+                <a href=""><img src="/assets/the-marginal.jpg" class="d-block w-100" alt=""></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-lg-block">
+                <a href=""><img src="/assets/heartstopper.jpg" class="d-block w-100" alt="..."></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 d-none d-lg-block">
+                <a href=""><img src="/assets/boruto.jpg" class="d-block w-100" alt="..."></a>
+                <div class="dropdown">
+                  <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
+                    <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
+                  </ul>
+                </div>
+              </div>
           </div>
         </div>
-        <!-- seccion tarjetas -->
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-6 col-md-3 col-lg-2">
-                  <span>Nuevo</span>
-                  <a href="/series/lacasadelpapel.html"><img src="/assets/la-casa-de-papel.jpg" class="d-block w-100" alt=""></a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
-                    <ul class="dropdown-menu bg-dark">
-                      <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
-                      <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                  <span>Nuevo Episodio</span>
-                  <a href="/series/emilyinparis.html"><img src="/assets/emily-in-paris.jpg" class="d-block w-100" alt="..."></a><div class="dropdown">
-                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
-                    <ul class="dropdown-menu bg-dark">
-                      <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
-                      <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
-                    </ul>
-                  </div> 
-                </div>
-                <div class="col-6 col-md-3 col-lg-2 d-none d-md-block">
-                  <span>Nuevo</span>
-                  <a href=""><img src="/assets/anne.jpg" class="d-block w-100" alt="..."></a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
-                    <ul class="dropdown-menu bg-dark">
-                      <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
-                      <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2 d-none d-md-block">
-                  <a href=""><img src="/assets/breaking-bad.jpg" class="d-block w-100" alt="..."></a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
-                    <ul class="dropdown-menu bg-dark">
-                      <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
-                      <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2 d-none d-lg-block">
-                  <a href=""><img src="/assets/dark.jpg" class="d-block w-100" alt="..."></a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
-                    <ul class="dropdown-menu bg-dark">
-                      <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
-                      <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2 d-none d-lg-block">
-                  <span>Nuevo Episodio</span>
-                  <a href=""><img src="/assets/game-thrones.jpg" class="d-block w-100" alt="..."></a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
-                    <ul class="dropdown-menu bg-dark">
-                      <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
-                      <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-6 col-md-3 col-lg-2">
-                  <a href=""><img src="/assets/las-chicas-del-claves.jpg" class="d-block w-100" alt=""></a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
-                    <ul class="dropdown-menu bg-dark">
-                      <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
-                      <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                  <a href=""><img src="/assets/stranger.jpg" class="d-block w-100" alt="..."></a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
-                    <ul class="dropdown-menu bg-dark">
-                      <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
-                      <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2 d-none d-md-block">
-                    <span>Nuevo</span>
-                  <a href=""><img src="/assets/the-crown.jpg" class="d-block w-100" alt="..."></a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
-                    <ul class="dropdown-menu bg-dark">
-                      <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
-                      <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2 d-none d-md-block">
-                  <a href=""><img src="/assets/the-resident.jpg" class="d-block w-100" alt="..."></a>
-                  <div class="dropdown">
-                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
-                    <ul class="dropdown-menu bg-dark">
-                      <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
-                      <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2 d-none d-md-block">
-                    <span>Nuevo Episodio</span>
-                    <a href=""><img src="/assets/outer-banks.jpg" class="d-block w-100" alt="..."></a>
-                    <div class="dropdown">
-                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical text-light"></i></button>
-                      <ul class="dropdown-menu bg-dark">
-                        <li class="dropdown-item text-light"><i class="bi bi-plus"></i> Agregar a mi lista</li>
-                        <li class="dropdown-item text-light"><i class="bi bi-info-circle"></i> Mas informacion</li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-              </div>
-            </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- termina seccion destacados -->
+    </section>
+    </section>
                 
     </main>
     <footer></footer>
