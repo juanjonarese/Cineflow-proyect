@@ -24,10 +24,12 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
-
   <body>
     <header>
-      <nav id="menu" class="navbar navbar-expand-lg navbar-dark fixed-md-top">
+      <nav
+        id="menu"
+        class="navbar navbar-expand-lg bg-dark navbar-dark fixed-md-top"
+      >
         <div class="container-fluid">
           <img class="logo" src="/assets/cineflow.svg" alt="logo" />
 
@@ -44,11 +46,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="navit-item"></li>
               <li class="nav-item">
                 <a class="nav-link" href="/index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Películas y series</a>
+                <a class="nav-link" href="#">Peliculas y series</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/Pages/planes.html">Planes</a>
@@ -63,7 +66,7 @@
                 <input
                   class="form-control"
                   type="search"
-                  placeholder="Busca tu película"
+                  placeholder="Busca tu pelicula"
                   aria-label="Search"
                 />
                 <button class="btn btn-primary ms-1" type="submit">
@@ -76,8 +79,8 @@
                 data-bs-toggle="modal"
                 data-bs-target="#login"
               >
-                <i class="bi bi-person-circle order-1"> </i>
-                <span class="d-lg-none"> Inicio de sesión</span>
+                <i class="bi bi-person-circle order-1"> </i
+                ><span class="d-lg-none"> Inicio de sesión</span>
               </a>
             </div>
           </div>
@@ -86,12 +89,95 @@
     </header>
 
     <main>
-      <div class="cuerpo">
-        <img
-          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fmicartelera.com.ar%2Fp%2FDAbMK5IiL3o%2F&psig=AOvVaw3t0FRzZqpudT5rrlAQurVx&ust=1734558540387000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLDxnKDkr4oDFQAAAAAdAAAAABAE"
-          alt=""
-        />
+      <!-- Fromulario de suscrpcion -->
+      <div
+        class="container-fluid vh-100 d-flex justify-content-center align-items-start"
+      >
+        <form
+          class="suscripcion row g-3 needs-validation justify-content-center mt-5"
+          novalidate
+        >
+          <div class="col-12 col-lg-6">
+            <label for="validationCustom01" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom01"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <label for="validationCustom02" class="form-label">Apellido</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <label for="validationCustomUsername" class="form-label"
+              >Nombre de usuario</label
+            >
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustomUsername"
+                aria-describedby="inputGroupPrepend"
+                required
+              />
+              <div class="invalid-feedback">Ingresa un nombre de usuario.</div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <label for="validationCustom03" class="form-label">Pais</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom03"
+              required
+            />
+            <div class="invalid-feedback">Ingresa tu pais.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom04" class="form-label">Plan</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Elegi tu plan</option>
+              <option>Basico</option>
+              <option>Estandar</option>
+              <option>Platino</option>
+            </select>
+            <div class="invalid-feedback">Ingresa tu pais..</div>
+          </div>
+          <div class="boton-suscripcion col-12 col-lg-6">
+            <button class="btn btn-primary align-items-center" type="submit">
+              Suscribirme
+            </button>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+              <label class="form-check-label" for="invalidCheck">
+                Acepto terminos y condiciones
+              </label>
+            </div>
+          </div>
+        </form>
       </div>
+
       <!-- Modal login-->
       <div
         class="modal fade"
