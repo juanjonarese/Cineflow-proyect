@@ -51,8 +51,7 @@
         font-size: 20px;
     }
     & p{
-        font-size: 13px;
-        
+        font-size: 13px; 
     }
 }
 
@@ -80,15 +79,11 @@
 
 @media(min-width:1024px){
 
-    .img-1{
-        background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(https://is5-ssl.mzstatic.com/image/thumb/Video123/v4/01/fb/62/01fb62d6-675a-39a8-3b04-803938715fbd/Notebook_H_DD_KA_TT_3840x2160_300dpi_MX.lsr/1200x630.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
     .card{
         width: 70rem;
-        height: 40rem;
+        height: 20rem;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .ratio{
