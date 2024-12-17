@@ -26,12 +26,14 @@ background: linear-gradient(#1A1A1D,#3B1C32,#6A1E55,#A64D79);
 }
 
 .navbar{
-  background-color: #6a1e55d5;
+  background-color: #6a1e5500;
 }
 
 /* Planes */
 
-
+.planes{
+  padding-top: 100px;
+}
 
 .precios{
 
