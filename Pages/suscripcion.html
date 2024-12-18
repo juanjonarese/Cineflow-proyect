@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Web para el alquiler de pelicules" />
+    <meta name="keywords" content="peliculas, cine , series" />
+    <meta
+      name="author"
+      content=" Juan - Mariana -Sofia -Lujan -Tamara - Celeste "
+    />
+    <meta name="robots" content="index" />
+    <title>Cineflow</title>
+    <link rel="icon" href="/assets/icono_flow.PNG" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        id="menu"
+        class="navbar navbar-expand-lg bg-dark navbar-dark fixed-md-top"
+      >
+        <div class="container-fluid">
+          <img class="logo" src="/assets/cineflow.svg" alt="logo" />
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="navit-item"></li>
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Peliculas y series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Pages/planes.html">Planes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team Flow</a>
+              </li>
+            </ul>
+
+            <div class="row g-2 flex-lg-row-reverse">
+              <form class="d-flex col-md-6 col-lg-10 order-2" role="search">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Busca tu pelicula"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary ms-1" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+              <a
+                class="btn btn-primary col-12 col-md-6 col-lg-2"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#login"
+              >
+                <i class="bi bi-person-circle order-1"> </i
+                ><span class="d-lg-none"> Inicio de sesión</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Fromulario de suscrpcion -->
+      <div
+        class="container-fluid vh-100 d-flex justify-content-center align-items-start"
+      >
+        <form
+          class="suscripcion row g-3 needs-validation justify-content-center mt-5"
+          novalidate
+        >
+          <div class="col-12 col-lg-6">
+            <label for="validationCustom01" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom01"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <label for="validationCustom02" class="form-label">Apellido</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <label for="validationCustomUsername" class="form-label"
+              >Nombre de usuario</label
+            >
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustomUsername"
+                aria-describedby="inputGroupPrepend"
+                required
+              />
+              <div class="invalid-feedback">Ingresa un nombre de usuario.</div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <label for="validationCustom03" class="form-label">Pais</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom03"
+              required
+            />
+            <div class="invalid-feedback">Ingresa tu pais.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom04" class="form-label">Plan</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Elegi tu plan</option>
+              <option>Basico</option>
+              <option>Estandar</option>
+              <option>Platino</option>
+            </select>
+            <div class="invalid-feedback">Ingresa tu pais..</div>
+          </div>
+          <div class="boton-suscripcion col-12 col-lg-6">
+            <button class="btn btn-primary align-items-center" type="submit">
+              Suscribirme
+            </button>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+              <label class="form-check-label" for="invalidCheck">
+                Acepto terminos y condiciones
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Modal login-->
+      <div
+        class="modal fade"
+        id="login"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="login">Iniciar sesión</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body d-flex">
+              <form class="form align-items-start">
+                <div class="titulo text-center">
+                  <h2>Iniciá sesión</h2>
+                </div>
+                <div class="contenedor-input">
+                  <label for="email" class="titulo-label"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="correo"
+                    placeholder="example@example.com"
+                  />
+                </div>
+
+                <div class="contenedor-input">
+                  <label for="password" class="titulo-label">Contraseña</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Ingresa tu contraseña"
+                  />
+                </div>
+
+                <div class="recordar">
+                  <a href="">¿Olvidaste la contraseña?</a>
+                </div>
+                <div class="button-group">
+                  <button type="submit">Iniciar sesión</button>
+                </div>
+
+                <div class="member text-center">
+                  <p>
+                    ¿Todavia no sos miembro de Cineflow?
+                    <a href="#">Suscribirme</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

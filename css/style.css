@@ -1,0 +1,142 @@
+.img-1{
+  background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(https://i.pinimg.com/originals/32/2b/ac/322bac5ea8ae6df49fc6fadf55474a21.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.img-2{
+  background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(https://image.tmdb.org/t/p/original/vT0cGschpZg2Ulum9wMD0VueGRk.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.card{
+  position: absolute;
+  inset: 0;
+  background-color: rgba(246, 246, 246, 0);
+  margin-right: auto;
+  margin-left: auto;
+  width: 20rem; 
+  height: 32rem;
+}
+.card-body{
+  color: white;
+  font-family: sans-serif;
+  & h5{
+      font-size: 20px;
+      text-align: center;
+  }
+  & p{
+      font-size: 13px; 
+      text-align: center;
+  }
+}
+
+.margen{
+  margin-top: 100px;
+}
+.dropdown{
+  display: flex;
+  justify-content: center;
+}
+.dropdown-item{
+  color: white;
+}
+.ratio{
+  position: absolute;
+  top: 240px;
+}
+
+.col{
+  position: absolute;
+  right: 40px;
+}
+
+@media (min-width: 768px) {
+  .card{
+      width: 40rem;
+      height: 40rem;
+  }
+  .margen{
+      margin-top: 200px;
+    }
+  .card-body{
+      h5{
+          font-size: 45px;
+      }
+      p{
+          font-size: 25px;
+      }
+  }
+  .col{
+    position: absolute;
+    right: 180px;
+  }
+  .ratio{
+    position: absolute;
+    top: 400px;
+  }
+}
+
+@media(min-width:1024px){
+
+  .img-1{
+      background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(https://th.bing.com/th/id/OIP.K5mWDNWxcajrWjhtPkXxDAHaEK?rs=1&pid=ImgDetMain);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+  .img-2{
+      background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(https://flxt.tmsimg.com/assets/p18761121_b_h8_am.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+  .card{
+      width: 70rem;
+      height: 20rem;
+      margin-top: 130px;
+  }
+  .ratio{
+    width: 50%;
+    position: absolute;
+    top:3px;
+  }
+  .card-body{
+    width: 500px;
+    margin-left: 650px;
+    margin-top: -300px;
+    position: absolute;
+    bottom: 3px;
+    h5{
+      font-size: 30px;
+      text-align: start;
+    }
+    p{
+      text-align: start;
+    }
+    .col{
+      position: absolute;
+      left: 20px;
+      .btn{
+        height: 50px;
+        width: 50px;
+      }
+    }
+    .dropdown{
+      position: absolute;
+      left: 80px;
+      .btn{
+        font-size: 25px;
+      }
+    }
+
+}
+
+
+}
+ 
+    
+  
