@@ -14,6 +14,8 @@ body{
   .col-6{
     position: relative;
     overflow: hidden;
+    border: solid 2px transparent;
+    transition: border ease 0.5s;
     span{
       position: absolute;
       background-color: #ffff;
@@ -44,24 +46,37 @@ body{
   img{
     border: solid 1.5px transparent;
   }
-  
+  .Numero-top10{
+    position: absolute;
+    bottom: 0;
+    left: 0.7rem;
+    font-size: 10.5rem;
+    font-weight: bold;
+    color: #ddd7ff;
+    text-shadow: 0 0 5px rgba(107, 105, 105, 0.7);
+    transition: all 0.5s ease;
+  }
 }
-.card-movie-top10:hover{
-  border: solid 2px #ffff;
-
+.carousel-control-prev{
+  width: 2%;
 }
-.Numero-top10{
-  position: absolute;
-  bottom: 0;
-  left: 0.7rem;
-  font-size: 10.5rem;
-  font-weight: bold;
-  color: #ddd7ff;
-  text-shadow: 0 0 5px rgba(107, 105, 105, 0.7);
-  transition: all 0.5s ease-in;
+.carousel-control-next{
+  width: 2%;
 }
-
 /* termina seccion top10 */
+
+
+
+
+
+/* pagina peli 1 */
+
+
+
+/* media querys */
+
+
+
 
 
 
@@ -69,7 +84,16 @@ body{
 
 
 /* HOVER */
-.Numero-top10:hover{
-  color: #3B1C32;
-
+.col-6:hover{
+  border: solid #fff 2px;
 }
+.card-movie-top10:hover{
+  border: solid 2px #ffff;
+  .Numero-top10{
+    color: #3B1C32;
+    transform: scale(1.2);
+  
+  }
+}
+
+
