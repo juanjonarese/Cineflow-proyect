@@ -1,0 +1,103 @@
+.img-1{
+    background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(https://th.bing.com/th/id/OIP.bKz--9soIO7CqD4HVOOF9AHaLH?rs=1&pid=ImgDetMain);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.img-2{
+    background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(https://th.bing.com/th/id/OIP.qdd_Dt6aMY6Xk64uz5YsCwHaKj?rs=1&pid=ImgDetMain);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.img-3{
+    background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.587)), url(https://img.rgstatic.com/content/show/ad6432d8-7815-473d-bef4-b6c7a6374d1f/poster-342.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.img-4{
+    background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.587)), url(https://3.bp.blogspot.com/-S44Nafat_Cg/VOvGLDghmfI/AAAAAAAAAQQ/H16PpcDwMNg/s1600/Ouija-Poster-Final.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.img-5{
+    background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.587)), url(https://images.justwatch.com/poster/304426769/s718/season-6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
+.card{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(246, 246, 246, 0);
+    margin-right: auto;
+    margin-left: auto;
+    width: 20rem; 
+    height: 32rem;
+}
+.card-body{
+    color: white;
+    font-family: sans-serif;
+    & h5{
+        font-size: 20px;
+    }
+    & p{
+        font-size: 13px; 
+    }
+}
+
+.margen{
+    margin-top: 100px;
+  }
+
+ @media (min-width: 768px) {
+    .card{
+        width: 40rem;
+        /* height: 40rem; */
+    }
+    .margen{
+        margin-top: 200px;
+      }
+    .card-body{
+        h5{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}
+
+@media(min-width:1024px){
+
+    .card{
+        width: 70rem;
+        height: 20rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .ratio{
+        width: 50%;
+    }
+    
+    .margen{
+        margin-top: 150px;
+      }
+
+    .card-body{
+        width: 500px;
+        margin-left: 650px;
+        margin-top: -300px;
+    }
+}
+  

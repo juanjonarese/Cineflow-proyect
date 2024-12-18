@@ -44,9 +44,9 @@ align-items: center;
 
 }
 
-.tarjeta-plan{
+/* .tarjeta-plan{
 background-color: #3B1C32;
-}
+} */
 
 .suscripcion{
 background-color: rgba(175, 156, 194,0.421 );
@@ -128,3 +128,123 @@ button:active{
 background-color: #222fda;
 }
 
+header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+  }
+/* Carosuel */
+#carousel .carousel-inner {
+    height: 100vh;
+    position: relative;
+    
+  }
+ 
+ #carousel .carousel-item {
+    height: 100%;
+    & img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+.carousel-caption{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.436);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    & h5{
+        font-size: 13px; 
+    }
+    & p{
+        font-size: 14px; 
+    }
+}
+.card{
+    position: absolute;
+    bottom: 9px;
+    & a{
+        font-size: 13px;
+    }
+}
+
+@media(min-width:768px){
+  .carousel-caption{
+    h5{
+      font-size: 25px;
+    }
+    p{
+      width: 80%;
+      font-size: 25px;
+      padding: 20px;
+      
+    }
+  }
+  .carousel-item{
+    height: 100%;
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+  .card{
+    a {
+      font-size: 25px;
+    }
+  }
+}
+
+@media(min-width:1024px){
+  .carousel-caption{
+    position: absolute;
+    h5{
+      font-size: 18px;
+      position: absolute;
+      left: 8px;
+      bottom: 160px;
+      padding: 20px;
+    }
+    p{
+      font-size: 23px;
+      width: 55%;
+      position: absolute;
+      left: 10px;
+      bottom: 30px;
+    }
+    
+    .card{
+      position: absolute;
+      left: 30px;
+      a {
+        font-size: 20px;
+        padding: 10px;
+      }
+    }
+
+}
+  .carousel-item{
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .carousel-control-prev{
+    width: 2%;
+  }
+  .carousel-control-next{
+    width: 2%;
+  }
+}
+
+ 
+  
