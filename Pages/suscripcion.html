@@ -25,10 +25,10 @@
     />
   </head>
   <body>
-    <header>
+    <header class="sticky-top">
       <nav
         id="menu"
-        class="navbar navbar-expand-lg bg-dark navbar-dark fixed-md-top"
+        class="navbar navbar-expand-lg navbar-dark fixed-md-top z-3"
       >
         <div class="container-fluid">
           <img class="logo" src="/assets/cineflow.svg" alt="logo" />
@@ -46,12 +46,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="navit-item"></li>
               <li class="nav-item">
                 <a class="nav-link" href="/index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Peliculas y series</a>
+                <a class="nav-link" href="#">Películas y series</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/Pages/planes.html">Planes</a>
@@ -62,11 +61,11 @@
             </ul>
 
             <div class="row g-2 flex-lg-row-reverse">
-              <form class="d-flex col-md-6 col-lg-10 order-2" role="search">
+              <form class="d-flex col-md-4 col-lg-10 order-2" role="search">
                 <input
                   class="form-control"
                   type="search"
-                  placeholder="Busca tu pelicula"
+                  placeholder="Busca tu película"
                   aria-label="Search"
                 />
                 <button class="btn btn-primary ms-1" type="submit">
@@ -74,24 +73,23 @@
                 </button>
               </form>
               <a
-                class="btn btn-primary col-12 col-md-6 col-lg-2"
+                class="btn btn-primary col-12 col-md-4 col-lg-2"
                 href="#"
                 data-bs-toggle="modal"
                 data-bs-target="#login"
               >
-                <i class="bi bi-person-circle order-1"> </i
-                ><span class="d-lg-none"> Inicio de sesión</span>
+                <i class="bi bi-person-circle order-1"> </i>
+                <span class="d-lg-none"> Inicio de sesión</span>
               </a>
             </div>
           </div>
         </div>
       </nav>
     </header>
-
     <main>
       <!-- Fromulario de suscrpcion -->
       <div
-        class="container-fluid vh-100 d-flex justify-content-center align-items-start"
+        class="container-fluid vh-100 d-flex justify-content-center align-items-start pt-5"
       >
         <form
           class="suscripcion row g-3 needs-validation justify-content-center mt-5"
