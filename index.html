@@ -242,9 +242,11 @@
         aria-hidden="true"
       >
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content bg-dark">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="login">Iniciar sesión</h1>
+              <h1 class="modal-title fs-5 text-light" id="login">
+                Iniciar sesión
+              </h1>
               <button
                 type="button"
                 class="btn-close"
@@ -252,13 +254,13 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body d-flex">
-              <form class="form align-items-start">
-                <div class="titulo text-center">
+            <div class="modal-body">
+              <form class="form bg-dark">
+                <div class="titulo text-center mb-1">
                   <h2>Iniciá sesión</h2>
                 </div>
                 <div class="contenedor-input">
-                  <label for="email" class="titulo-label"
+                  <label for="email" class="titulo-label text-light"
                     >Correo electrónico</label
                   >
                   <input
@@ -270,7 +272,9 @@
                 </div>
 
                 <div class="contenedor-input">
-                  <label for="password" class="titulo-label">Contraseña</label>
+                  <label for="password" class="titulo-label text-light mb-1"
+                    >Contraseña</label
+                  >
                   <input
                     type="password"
                     class="form-control"
@@ -279,18 +283,23 @@
                   />
                 </div>
 
-                <div class="recordar">
-                  <a href="">¿Olvidaste la contraseña?</a>
+                <div class="recordar my-3">
+                  <a class="suscribirme-modal" href=""
+                    >¿Olvidaste la contraseña?</a
+                  >
                 </div>
                 <div class="button-group">
-                  <button type="submit">Iniciar sesión</button>
+                  <button class="btn btn-primary">Iniciar sesión</button>
                 </div>
 
                 <div class="member text-center">
-                  <p>
-                    ¿Todavia no sos miembro de Cineflow?
-                    <a href="#">Suscribirme</a>
-                  </p>
+                  <span class="text-light mx-2 text-decoration-none"
+                    >¿Todavia no sos miembro de Cineflow?</span
+                  >
+
+                  <a class="suscribirme-modal" href="/Pages/planes.html"
+                    >Suscribirme</a
+                  >
                 </div>
               </form>
             </div>
