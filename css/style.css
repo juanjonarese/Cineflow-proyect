@@ -5,8 +5,24 @@
   background-size: cover;
   min-height: 100vh;
 }
+
 .img-2{
   background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(https://image.tmdb.org/t/p/original/vT0cGschpZg2Ulum9wMD0VueGRk.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.img-3{
+  background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(https://th.bing.com/th/id/OIP.i9KYzhhpKEfVDfNgdOafgQHaJV?rs=1&pid=ImgDetMain);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.img-4{
+  background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(https://playmax.xyz/img/c/400/82/1496406885/40747.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -94,6 +110,18 @@
       background-position: center;
       background-size: cover;
   }
+  .img-3{
+    background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(https://static.titlovi.com/img/0260/260327-tt5674718.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img-4{
+  background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(https://th.bing.com/th/id/OIP.IcaRdSVtcEfwEvH6P9chqAAAAA?w=474&h=266&rs=1&pid=ImgDetMain);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
   .card{
       width: 70rem;
       height: 20rem;

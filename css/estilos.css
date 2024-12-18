@@ -106,7 +106,7 @@ text-decoration: underline;
 text-align: center;
 margin: 10px 0;
 }
-button {
+/* button {
 padding: 10px 20px;  
 background-color: #2806be; 
 color: rgb(255, 255, 250); 
@@ -126,7 +126,7 @@ transform: scale(1.01)
 
 button:active{
 background-color: #222fda;
-}
+} */
 
 header {
     position: fixed;
