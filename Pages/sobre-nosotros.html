@@ -13,10 +13,73 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="/css/sobre-nosotros.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
-  <header></header>
+  
+    <header class="sticky-top">
+      <nav
+        id="menu"
+        class="navbar navbar-expand-lg navbar-dark fixed-md-top z-3"
+      >
+        <div class="container-fluid">
+          <img class="logo" src="/assets/cineflow.svg" alt="logo" />
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Películas y series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Pages/planes.html">Planes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team Flow</a>
+              </li>
+            </ul>
+
+            <div class="row g-2 flex-lg-row-reverse justify-content-between">
+              <form class="d-flex col-md-4 col-lg-10 order-2" role="search">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Busca tu película"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary ms-1" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+              <a
+                class="btn btn-primary col-12 col-md-4 col-lg-2"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#login"
+              >
+                <i class="bi bi-person-circle order-1"> </i>
+                <span class="d-lg-none"> Inicio de sesión</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+  </header>
   <main>
     <section id="footer" class="container de tarjetas grupal  mb-3">
       <div class="row">
