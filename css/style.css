@@ -28,6 +28,22 @@
   background-size: cover;
   min-height: 100vh;
 }
+.img-5{
+  background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(/assets/documental2.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.img-6{
+  background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(/assets/documental2.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+
 .card{
   position: absolute;
   inset: 0;
@@ -122,6 +138,19 @@
   background-position: center;
   background-size: cover;
 }
+.img-5{
+  background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(/assets/documental1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.img-6{
+  background: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.68)), url(/assets/documental2.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
   .card{
       width: 70rem;
       height: 20rem;

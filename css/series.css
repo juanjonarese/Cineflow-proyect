@@ -33,6 +33,14 @@ body{
   }
 
 }
+.categorias{
+  color: white;
+  width: 130px;
+  height: 40px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  background-color: blue;
+}
 /* termina seccion destacados */
 
 /* seccion top10 */
@@ -61,12 +69,6 @@ body{
   transition: all 0.5s ease-in;
 }
 
-
-/* HOVER */
-.Numero-top10:hover{
-  color: #3B1C32;
-
-}
   .carousel-control-prev{
     width: 2%;
   }
