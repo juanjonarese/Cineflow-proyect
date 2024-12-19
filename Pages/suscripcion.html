@@ -92,7 +92,7 @@
         class="container-fluid vh-100 d-flex justify-content-center align-items-start pt-5"
       >
         <form
-          class="suscripcion row g-3 needs-validation justify-content-center mt-5"
+          class="suscripcion row g-3 needs-validation justify-content-center mt-5 bg-dark text-light"
           novalidate
         >
           <div class="col-12 col-lg-6">
@@ -127,6 +127,7 @@
                 id="validationCustomUsername"
                 aria-describedby="inputGroupPrepend"
                 required
+                placeholder="elige un nombre de usuario"
               />
               <div class="invalid-feedback">Ingresa un nombre de usuario.</div>
             </div>
@@ -138,21 +139,22 @@
               class="form-control"
               id="validationCustom03"
               required
+              placeholder="Ingresa Pais"
             />
             <div class="invalid-feedback">Ingresa tu pais.</div>
           </div>
           <div class="col-md-6">
             <label for="validationCustom04" class="form-label">Plan</label>
             <select class="form-select" id="validationCustom04" required>
-              <option selected disabled value="">Elegi tu plan</option>
+              <option selected disabled value="">Elige tu plan</option>
               <option>Basico</option>
               <option>Estandar</option>
               <option>Platino</option>
             </select>
-            <div class="invalid-feedback">Ingresa tu pais..</div>
+            <div class="invalid-feedback">Ingresa tu pais</div>
           </div>
           <div class="boton-suscripcion col-12 col-lg-6">
-            <button class="btn btn-primary align-items-center" type="submit">
+            <button class="boton-azul btn btn-primary" type="submit">
               Suscribirme
             </button>
           </div>

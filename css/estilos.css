@@ -14,9 +14,17 @@ header {
 }
 
 #menu{
-  background-color: #1A1A1D;
+  background-color: #1a1a1dc4;
 }
-
+.x{
+  background-color: rgb(255, 255, 255);
+}
+.boton-azul{
+  margin-top: 32px;
+}
+.suscribirme-modal{
+  text-decoration: none;
+}
 
 
 .modal-content{
