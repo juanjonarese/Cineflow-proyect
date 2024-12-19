@@ -46,7 +46,10 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            class="collapse navbar-collapse fs-5"
+            id="navbarSupportedContent"
+          >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="/index.html">Inicio</a>
@@ -61,9 +64,9 @@
                 <a class="nav-link" href="#">Team Flow</a>
               </li>
             </ul>
-
-            <div class="row g-2 flex-lg-row-reverse">
-              <form class="d-flex col-md-4 col-lg-10 order-2" role="search">
+            <div class="row align-items-center">
+              <!-- Buscador -->
+              <form class="d-flex col-12 col-md-4 order-md-1" role="search">
                 <input
                   class="form-control"
                   type="search"
@@ -74,15 +77,19 @@
                   <i class="bi bi-search"></i>
                 </button>
               </form>
-              <a
-                class="btn btn-primary col-12 col-md-4 col-lg-2"
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#login"
-              >
-                <i class="bi bi-person-circle order-1"> </i>
-                <span class="d-lg-none"> Inicio de sesión</span>
-              </a>
+
+              <!-- Botón de Login -->
+              <div class="col-12 col-md-8 text-md-end mt-2 mt-md-0 order-md-2">
+                <a
+                  class="btn btn-primary"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#login"
+                >
+                  <i class="bi bi-person-circle"> </i>
+                  <span class="d-lg-none">Inicio de sesión</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -284,7 +291,7 @@
                 </div>
 
                 <div class="recordar my-3">
-                  <a class="suscribirme-modal" href=""
+                  <a class="suscribirme-modal text-decoration-none" href=""
                     >¿Olvidaste la contraseña?</a
                   >
                 </div>
@@ -297,7 +304,9 @@
                     >¿Todavia no sos miembro de Cineflow?</span
                   >
 
-                  <a class="suscribirme-modal" href="/Pages/planes.html"
+                  <a
+                    class="suscribirme-modal text-decoration-none"
+                    href="/Pages/planes.html"
                     >Suscribirme</a
                   >
                 </div>
